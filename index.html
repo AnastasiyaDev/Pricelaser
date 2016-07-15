@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+	<title>Pricelaser.com</title>
+	<link rel="stylesheet" href="public/css/main.css">
+
+</head>
+<body>
+	<div class="header">
+		<div class="top-panel marg-auto">
+			<div class="authorization max-w-1200 marg-auto clearfix">
+				<ul class="unstyle list-inline">
+					<li><a href="">Patient Login</a></li>
+					<li><a href="">Patient Registration</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<a class="logo marg-auto" href=""></a>
+
+		<div class="navigation max-w-1200 marg-auto">
+
+			<ul class="socio unstyle list-inline clearfix">
+				<li><a class="facebook" href=""></a></li>
+				<li><a class="twitter" href=""></a></li>
+				<li><a class="google-plus" href=""></a></li>
+			</ul>
+
+			<ul class="nav unstyle list-inline">
+				<li><a href="">Overview</a></li>
+				<li><a href="">How It Works</a></li>
+				<li><a href="">FAQ</a></li>
+				<li><a href="">Why Pricelaser.com</a></li>
+				<li><a href="">LASIK</a></li>
+				<li><a href="">Contact Us</a></li>		
+			</ul>
+		</div>
+
+	</div>
+
+	<div class="content">
+		<div class="primary">
+			<div class="frame"></div>
+
+			<div class="max-w-1200 marg-auto">
+				<div class="tagline">
+					<div class="green-line"></div>
+					<p>The LASIK surgeon you want<br>The price you name<br>The quality you deserve</p>
+				</div>
+				<a class="btn clearfix" href="">
+					<span>Make Offer Now</span>
+					<p class="icon-arrow"></p>
+				</a>
+			</div>
+		</div>
+
+		<div class="reviews">
+			<div class="max-w-1200 marg-auto">
+				<ul id="reviewers"></ul>
+			</div>
+		</div>
+
+		<script type="text/template" id="list-template">
+
+			<% _(reviewers).forEach(function(reviewer) { %>
+				<li>
+					<p class="reviewer-photo">
+						<img src="public/img/reviewers/<%= reviewer.pic %>">
+					</p>
+					<p class="reviewer-info"> <%= reviewer.name %> </p>
+					<p class="reviewer-note">
+						<i> <%= reviewer.note %> </i>
+					</p>
+				</li>
+			<% }); %>
+
+		</script>
+
+		<div class="max-w-1200 marg-auto">
+			<h1>How It Works</h1>
+			<ul class="work-process unstyle list-inline clearfix">
+				<li>
+					<img src="public/img/1st-step-green.png">
+					<p>You submit<br>your offer to<br><b>Pricelaser.com</b></p>
+				</li>
+				<li>
+					<img src="public/img/2nd-step-blue.png">
+					<p>We place it with<br>the surgeons<br>you selected</p>
+				</li>
+				<li>
+					<img src="public/img/3rd-step-orange.png">
+					<p>The contacted<br>surgeons may accept<br>your offer</p>
+				</li>
+				<li>
+					<img src="public/img/4th-step-yellow.png">
+					<p>If matched, you are on<br>your way to a great<br>LASIK experience</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="max-w-1200 marg-auto">
+			<ul class="unstyle list-inline">
+				<li><a href="">Surgeon Login</a></li>
+				<li><a href="">Terms and Conditions</a></li>
+				<li><a href="">Privacy Policy</a></li>	
+			</ul>
+		</div>
+	</div>
+
+
+  	<script src="https://code.jquery.com/jquery-3.0.0.min.js"
+          	integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script>
+  	<script src="./public/js/getData.js"></script>
+	<script src="./public/js/script.js"></script>
+</body>
+</html>
