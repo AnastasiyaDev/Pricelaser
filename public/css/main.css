@@ -53,7 +53,7 @@ a {
 }
 .authorization a {
   padding: 8px 10px;
-  font-size: 14px !important;
+  font-size: 14px;
 }
 .authorization a:hover {
   border-radius: 5px;
@@ -159,6 +159,7 @@ a {
 .primary .tagline p {
   margin-top: 28px;
   margin-bottom: 40px;
+  letter-spacing: -1px;
 }
 .primary .btn {
   position: relative;
@@ -238,6 +239,7 @@ a {
   position: relative;
   text-align: center;
   max-width: 25%;
+  min-width: 24%;
   padding: 0px 30px;
 }
 .work-process li:first-child::before {

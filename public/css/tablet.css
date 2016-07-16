@@ -1,15 +1,32 @@
 @media screen and (max-width: 1031px) {
+  .header {
+    border-bottom: 1px solid #e7e7e7;
+  }
+  .top-panel {
+    min-height: 65px;
+  }
+  .authorization a {
+    font-size: 12px;
+  }
   .logo {
     float: left;
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: -58px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    background-size: contain;
   }
   .socio {
     display: none;
   }
   .navigation {
-    margin-top: 70px;
-    padding: 0px 0px 0px 180px;
+    margin-top: 30px;
+    padding: 0px 0px 0px 120px;
     width: auto;
     text-align: right;
+    font-size: 14px;
   }
   .primary {
     height: 430px;
@@ -22,15 +39,25 @@
     display: none;
   }
   .primary .tagline {
-    padding: 20px 0px 26px 30px;
+    padding: 40px 0px 26px 20px;
+  }
+  .primary .tagline .green-line {
+    height: 2px;
+    width: 80px;
   }
   .primary .tagline p {
     margin-bottom: 0px;
-    font-size: 60%;
-    line-height: 50px;
+    font-size: 50%;
+    line-height: 40px;
   }
   .primary .btn {
-    margin-left: 30px;
+    margin-left: 20px;
+    font-size: 20px;
+    padding: 12px 20px;
+  }
+  .primary .btn .icon-arrow {
+    background-size: contain;
+    padding: 15px;
   }
   .reviews ul {
     text-align: left;
