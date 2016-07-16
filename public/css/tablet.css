@@ -1,4 +1,4 @@
-@media screen and (max-width: 1031px) {
+@media screen and (max-width: 959px) {
   .header {
     border-bottom: 1px solid #e7e7e7;
   }
@@ -29,7 +29,6 @@
     font-size: 14px;
   }
   .primary {
-    height: 430px;
     padding-bottom: 20px;
     background: #F3F3F3 url("../img/girl-eyes-wallpaper-with-frame.png") no-repeat right center;
     background-size: 65% auto;
