@@ -49,6 +49,15 @@ a {
   height: 185px;
   padding: 15px 15px 5px 15px;
 }
+.list-for-mob {
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  display: none;
+}
+.list-for-mob a:hover {
+  color: #00B625;
+}
 .marg-auto {
   margin-left: auto;
   margin-right: auto;
@@ -293,6 +302,6 @@ a {
 .footer li a {
   color: #818181;
 }
-* {
+*:not(.list-for-mob) {
   transition: all 0.3s ease;
 }

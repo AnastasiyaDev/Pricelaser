@@ -10,9 +10,9 @@
 <body>
 	<div class="header clearfix">
 
-		<ul class="mob-menu unstyle list-inline">
-			<li class="login-m"></li>
-			<li class="nav-m">
+		<ul id="moble-menu" class="mob-menu unstyle list-inline">
+			<li class="login-m js-open-log-menu"></li>
+			<li class="nav-m js-open-nav-menu">
 				<i></i>
 				<i></i>
 				<i></i>
@@ -29,6 +29,19 @@
 		</div>
 
 		<a class="logo marg-auto" href=""></a>
+
+		<ul id="log-list" class="unstyle list-for-mob">
+			<li><a href="">Patient Login</a></li>
+			<li><a href="">Patient Registration</a></li>
+			<li><a href="">Surgeon Portal</a></li>
+		</ul>
+
+		<ul id="nav-list" class="unstyle list-for-mob">
+			<li><a href="">Take a Tour</a></li>
+			<li><a href="">How It Works</a></li>
+			<li><a href="">FAQ</a></li>
+			<li><a href="">Why Pricelaser.com</a></li>
+		</ul>
 
 		<div class="navigation max-w-1200 marg-auto">
 
@@ -126,6 +139,6 @@
           	integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script>
   	<script src="./public/js/getData.js"></script>
-	<!-- <script src="./public/js/script.js"></script> -->
+	<script src="./public/js/script.js"></script>
 </body>
 </html>
