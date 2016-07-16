@@ -65,4 +65,10 @@
   .work-process li::before {
     display: none;
   }
+  .footer li {
+    font-size: 14px;
+    padding-right: 30px;
+    font-weight: 300;
+    line-height: 30px;
+  }
 }

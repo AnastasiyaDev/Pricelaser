@@ -214,7 +214,7 @@ a {
   vertical-align: top;
   letter-spacing: -1px;
 }
-.reviews ul li .reviewer-info::after {
+.reviews ul li .reviewer-name::after {
   background: #adadad none repeat scroll 0 0;
   content: "";
   display: block;
