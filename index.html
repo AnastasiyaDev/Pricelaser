@@ -4,10 +4,11 @@
 <meta charset="UTF-8">
 	<title>Pricelaser.com</title>
 	<link rel="stylesheet" href="public/css/main.css">
-
+	<link rel="stylesheet" media="(max-width: 1031px)" href="public/css/tablet.css">
+	<link rel="stylesheet" media="(max-width: 767px)" href="public/css/tablet-mini.css">
 </head>
 <body>
-	<div class="header">
+	<div class="header clearfix">
 		<div class="top-panel marg-auto">
 			<div class="authorization max-w-1200 marg-auto clearfix">
 				<ul class="unstyle list-inline">
@@ -56,8 +57,8 @@
 		</div>
 
 		<div class="reviews">
-			<div class="max-w-1200 marg-auto">
-				<ul id="reviewers"></ul>
+			<div class="max-w-1200 marg-auto clearfix">
+				<ul id="reviewers" class="clearfix"></ul>
 			</div>
 		</div>
 
@@ -68,7 +69,7 @@
 					<p class="reviewer-photo">
 						<img src="public/img/reviewers/<%= reviewer.pic %>">
 					</p>
-					<p class="reviewer-info"> <%= reviewer.name %> </p>
+					<p class="reviewer-name"> <%= reviewer.name %> </p>
 					<p class="reviewer-note">
 						<i> <%= reviewer.note %> </i>
 					</p>
@@ -79,7 +80,7 @@
 
 		<div class="max-w-1200 marg-auto">
 			<h1>How It Works</h1>
-			<ul class="work-process unstyle list-inline clearfix">
+			<ul class="work-process unstyle list-inline">
 				<li>
 					<img src="public/img/1st-step-green.png">
 					<p>You submit<br>your offer to<br><b>Pricelaser.com</b></p>
@@ -94,7 +95,7 @@
 				</li>
 				<li>
 					<img src="public/img/4th-step-yellow.png">
-					<p>If matched, you are on<br>your way to a great<br>LASIK experience</p>
+					<p>If matched, you are on your way to a great LASIK experience</p>
 				</li>
 			</ul>
 		</div>
@@ -115,6 +116,6 @@
           	integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script>
   	<script src="./public/js/getData.js"></script>
-	<script src="./public/js/script.js"></script>
+	<!-- <script src="./public/js/script.js"></script> -->
 </body>
 </html>

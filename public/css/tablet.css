@@ -1,0 +1,81 @@
+@media screen and (max-width: 1031px) {
+  .logo {
+    float: left;
+  }
+  .socio {
+    display: none;
+  }
+  .navigation {
+    margin-top: 70px;
+    padding: 0px 0px 0px 180px;
+    width: auto;
+    text-align: right;
+  }
+  .primary {
+    height: 430px;
+    padding-bottom: 20px;
+    background: #F3F3F3 url("../img/girl-eyes-wallpaper-with-frame.png") no-repeat right center;
+    background-size: 65% auto;
+    height: 300px;
+  }
+  .primary .frame {
+    display: none;
+  }
+  .primary .tagline {
+    padding: 20px 0px 26px 30px;
+  }
+  .primary .tagline p {
+    margin-bottom: 0px;
+    font-size: 60%;
+    line-height: 50px;
+  }
+  .primary .btn {
+    margin-left: 30px;
+  }
+  .reviews ul {
+    text-align: left;
+    padding: 25px 0px;
+  }
+  .reviews ul li {
+    box-sizing: border-box;
+    height: 190px;
+    width: 100%;
+    margin: 0px 0px 15px;
+    font-size: 15px;
+  }
+  .reviews ul li p {
+    text-align: left;
+  }
+  .reviews ul li .reviewer-photo {
+    float: left;
+    margin-right: 20px;
+    margin-top: 12px;
+  }
+  .reviews ul li .reviewer-photo img {
+    width: 69px;
+    height: 69px;
+    position: relative;
+  }
+  .reviews ul li .reviewer-name::after {
+    margin: 10px 0 0 90px;
+  }
+  .reviews li::before,
+  .reviews li::after {
+    height: 190px;
+  }
+  .work-process {
+    white-space: nowrap;
+  }
+  .work-process p {
+    white-space: normal;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .work-process li img {
+    width: 100%;
+    vertical-align: middle;
+  }
+  .content h1 {
+    font-size: 30px;
+  }
+}

@@ -82,7 +82,7 @@ a {
   border: 1px solid #00B625;
 }
 .socio .facebook {
-  background: url("../img/socio/1380717345-06-facebook-active.png") no-repeat 14px 10px;
+  background: url("../img/socio/1380717345-06-facebook.png") no-repeat 14px 10px;
 }
 .socio .facebook:hover {
   background: url("../img/socio/1380717345-06-facebook-active.png") no-repeat 14px 10px;
@@ -130,7 +130,7 @@ a {
   margin-bottom: 60px;
 }
 .primary {
-  background: #F3F3F3 url("../img/girl-eyes-wallpaper.jpg") no-repeat right center;
+  background: #F3F3F3 url("../img/girl-eyes-wallpaper.png") no-repeat right center;
   height: 571px;
   position: relative;
 }
@@ -140,7 +140,7 @@ a {
   width: 294px;
   height: 248px;
   right: 130px;
-  top: 220px;
+  top: 226px;
 }
 .primary .tagline {
   color: #44474C;
@@ -181,7 +181,7 @@ a {
 }
 .reviews {
   background-color: #45474D;
-  margin-bottom: 76px;
+  margin-bottom: 50px;
 }
 .reviews ul {
   text-align: center;
@@ -191,7 +191,7 @@ a {
 .reviews ul li {
   color: #adadad;
   display: inline-block;
-  width: 287px;
+  width: 23%;
   margin: 0 20px;
   padding: 15px 20px 0;
   position: relative;
@@ -233,12 +233,12 @@ a {
   margin-bottom: 82px;
 }
 .work-process li {
+  box-sizing: border-box;
+  vertical-align: top;
   position: relative;
   text-align: center;
-  font-size: 23px;
   max-width: 25%;
-  min-width: 19%;
-  padding: 0 30px;
+  padding: 0px 30px;
 }
 .work-process li:first-child::before {
   display: none;
@@ -252,6 +252,10 @@ a {
   position: absolute;
   top: 59px;
   width: 32px;
+}
+.work-process li::before,
+.work-process li::after {
+  box-sizing: border-box;
 }
 .work-process p {
   color: #5c5c5c;
@@ -280,4 +284,7 @@ a {
 }
 .footer li a {
   color: #818181;
+}
+* {
+  transition: all 0.3s ease;
 }
