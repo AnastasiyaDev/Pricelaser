@@ -1,5 +1,68 @@
 @media screen and (max-width: 767px) {
-  .top-panel {
-    background: red;
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+  .top-panel .authorization ul {
+    display: none;
+  }
+  .navigation {
+    display: none;
+  }
+  .header .mob-menu {
+    margin-top: 0px;
+  }
+  .header .mob-menu li {
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    height: 31px;
+    position: absolute;
+    width: 33px;
+    top: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .header .mob-menu .login-m {
+    right: 55px;
+    text-align: center;
+  }
+  .header .mob-menu .nav-m {
+    right: 15px;
+    padding-top: 6px;
+  }
+  .header .mob-menu .nav-m i {
+    background: #868686 none repeat scroll 0 0;
+    display: block;
+    height: 2px;
+    margin: 3px auto 0;
+    width: 17px;
+  }
+  .primary {
+    height: 250px;
+  }
+  .primary .tagline {
+    padding: 20px;
+  }
+  .work-process {
+    white-space: normal;
+    text-align: center;
+  }
+  .work-process li {
+    display: block;
+    max-width: 380px;
+    width: 380px;
+    margin: 0 auto 20px;
+  }
+  .work-process li img {
+    width: 50%;
+    vertical-align: middle;
+  }
+  .work-process li p {
+    white-space: normal;
+    font-size: 20px;
+  }
+  .work-process li::before {
+    display: none;
   }
 }
