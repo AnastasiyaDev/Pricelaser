@@ -100,19 +100,19 @@ a {
   background: url("../img/socio/1380717345-06-facebook.png") no-repeat 14px 10px;
 }
 .socio .facebook:hover {
-  background: url("../img/socio/1380717345-06-facebook-active.png") no-repeat 14px 10px;
+  background: url("../img/socio/1380717345-06-facebook-active.png") no-repeat 14px 8px;
 }
 .socio .twitter {
   background: url("../img/socio/1380717543-03-twitter.png") no-repeat 10px 11px;
 }
 .socio .twitter:hover {
-  background: url("../img/socio/1380717345-06-twitter-active.png") no-repeat 14px 10px;
+  background: url("../img/socio/1380717543-03-twitter-active.png") no-repeat 10px 10px;
 }
 .socio .google-plus {
-  background: url("../img/socio/1380717309-40-google-plus.png") no-repeat 10px 11px;
+  background: url("../img/socio/1380717309-40-google-plus.png") no-repeat 10px 12px;
 }
 .socio .google-plus:hover {
-  background: url("../img/socio/1380717345-06-google-plus-active.png") no-repeat 14px 10px;
+  background: url("../img/socio/1380717309-40-google-plus-active.png") no-repeat 10px 10px;
 }
 .navigation {
   text-align: center;
