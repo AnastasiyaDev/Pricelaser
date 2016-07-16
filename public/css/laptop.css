@@ -3,7 +3,7 @@
     padding-bottom: 20px;
     background: #F3F3F3 url("../img/girl-eyes-wallpaper-with-frame.png") no-repeat right center;
     background-size: 65% auto;
-    height: 400px;
+    height: 375px;
   }
   .primary .frame {
     display: none;
@@ -19,6 +19,9 @@
     margin-left: 50px;
     margin-top: -20px;
   }
+  .reviews ul {
+    padding: 25px 0px 25px 0px;
+  }
   .reviews ul li {
     height: 335px;
   }
@@ -31,5 +34,15 @@
   .reviews li::before,
   .reviews li::after {
     height: 345px;
+  }
+  .work-process li p {
+    box-sizing: border-box;
+    white-space: normal;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .work-process li p::before,
+  .work-process li p::after {
+    box-sizing: border-box;
   }
 }

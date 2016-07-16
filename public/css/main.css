@@ -141,8 +141,7 @@ a {
   font-weight: 100;
   color: #44474C;
   font-size: 44px;
-  margin: 0px;
-  margin-bottom: 60px;
+  margin: 50px 0px 60px 0px;
 }
 .primary {
   background: #F3F3F3 url("../img/girl-eyes-wallpaper.png") no-repeat right center;
@@ -197,19 +196,19 @@ a {
 }
 .reviews {
   background-color: #45474D;
-  margin-bottom: 50px;
 }
 .reviews ul {
   text-align: center;
-  margin: 0;
-  padding: 25px 0px 40px 0px;
+  margin: 0px;
+  padding: 25px 0px 0px 0px;
 }
 .reviews ul li {
   color: #adadad;
   display: inline-block;
+  height: 335px;
   width: 23%;
-  margin: 0 20px;
-  padding: 15px 20px 0;
+  margin: 0px 20px;
+  padding: 15px 20px 0px;
   position: relative;
   vertical-align: top;
   letter-spacing: -1px;
@@ -219,7 +218,7 @@ a {
   content: "";
   display: block;
   height: 1px;
-  margin: 10px auto 0;
+  margin: 10px auto 0px;
   width: 180px;
 }
 .reviews ul li .reviewer-note {
@@ -270,17 +269,13 @@ a {
   top: 59px;
   width: 32px;
 }
-.work-process li::before,
-.work-process li::after {
-  box-sizing: border-box;
-}
-.work-process p {
+.work-process li p {
   color: #5c5c5c;
   font-size: 20px;
   line-height: 30px;
   margin-top: 10px;
 }
-.work-process p b {
+.work-process li p b {
   font-weight: normal;
   color: #000;
 }
@@ -304,4 +299,18 @@ a {
 }
 *:not(.list-for-mob) {
   transition: all 0.3s ease;
+}
+@media screen and (min-width: 481px) and (max-width: 660px) {
+  .header {
+    background: red;
+  }
+  .primary {
+    height: 180px !important;
+    background-size: 57% auto !important;
+  }
+  .primary .tagline p {
+    font-size: 14px !important;
+    line-height: 25px !important;
+    margin-top: 20px !important;
+  }
 }

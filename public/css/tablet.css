@@ -1,4 +1,4 @@
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 1021px) {
   .header {
     border-bottom: 1px solid #e7e7e7;
   }
@@ -92,14 +92,14 @@
   .work-process {
     white-space: nowrap;
   }
-  .work-process p {
-    white-space: normal;
-    font-size: 14px;
-    line-height: 30px;
-  }
   .work-process li img {
     width: 100%;
     vertical-align: middle;
+  }
+  .work-process li p {
+    white-space: normal;
+    font-size: 14px;
+    line-height: 30px;
   }
   .content h1 {
     font-size: 30px;
