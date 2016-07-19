@@ -1,0 +1,117 @@
+@tablet: ~"screen and (max-width: 1021px)";
+@grey-primary-b: #F3F3F3;
+
+@media @tablet {
+	.header{
+		border-bottom: 1px solid #e7e7e7;
+	}
+	.top-panel {
+		min-height: 65px;
+	}
+	.authorization {
+		a {
+			font-size: 12px;
+		}
+	}
+    .logo {
+    	float: left;
+    	width: 88px;  
+		height: 100px;  
+		margin-left: 10px; 
+		margin-top: -58px; 
+		padding-bottom: 5px; 
+		margin-bottom: 15px; 
+		background-size: contain; 
+    }
+    .socio {
+    	display: none;
+    }
+    .navigation {
+		margin-top: 30px; 
+		padding: 0px 0px 0px 120px; 
+		width: auto; 
+    	text-align: right;
+    	font-size: 14px; 
+    }
+    .primary {
+    	padding-bottom: 20px;
+    	background: @grey-primary-b url("../img/girl-eyes-wallpaper-with-frame.png") no-repeat right center;
+    	background-size: 65% auto;
+    	height: 300px;
+    	.frame {
+    		display: none;
+    	}
+    	.tagline {
+    		padding: 40px 0px 26px 20px;
+    		.green-line {
+			    height: 2px;
+			    width: 80px;
+			}
+	    	p {
+	    		margin-bottom: 0px;
+	    		font-size: 50%; 
+	    		line-height: 40px; 
+	    	}
+    	}
+    	.btn {
+    		margin-left: 20px;
+    		font-size: 20px;
+    		padding: 12px 20px; 
+    		.icon-arrow {
+    			background-size: contain;
+    			padding: 15px;
+    		}
+    	}
+    }
+    .reviews {
+    	ul {
+    		text-align: left;
+    		padding: 25px 0px;
+    		li {
+    			box-sizing: border-box;
+	    		height: 190px;
+	    		width: 100%;
+	    		margin: 0px 0px 15px;
+	    		font-size: 15px;
+	    		p {
+	    			text-align: left;
+	    		}
+	    		.reviewer-photo {
+				    float: left;
+				    margin-right: 20px;
+				    margin-top: 12px;
+				    img {
+				    	width: 69px;
+				    	height: 69px;
+				    	position: relative;
+				    }
+				}
+	    		.reviewer-name::after {
+					margin: 10px 0 0 90px;
+	    		}
+	    	}
+    	}
+    }
+    .reviews li::before, .reviews li::after {
+    	height: 190px;
+	}
+	.work-process {
+		white-space: nowrap;
+		li {
+			img {
+				width: 100%;
+				vertical-align: middle;
+			}
+			p {
+				white-space: normal;
+				font-size: 14px;
+				line-height: 30px;
+			}
+		}
+	}
+	.content {
+	    h1 {
+	    	font-size: 30px;
+	    }
+	}
+}

@@ -1,0 +1,68 @@
+@mobile: ~"screen and (max-width: 480px)";
+
+@media @mobile{
+	.primary {
+		height: 223px;
+		background: #f3f3f3;
+		.tagline {
+			margin: 0px;
+			padding: 20px 0px;
+			p {
+				line-height: 32px;
+			}
+		}
+		.btn {
+			white-space: nowrap;
+			margin: auto;
+			display: flex;
+			width: 100%;
+			background: #00B625;
+			box-shadow: 0px -40px 59px -31px #00A821 inset;
+			text-align: center;
+			vertical-align: middle;
+			flex-direction: row;
+ 			justify-content: center;
+ 			align-items:center;
+		}
+	}
+	.reviews{
+		ul {
+			li {
+				height: 305px;
+				p {
+					text-align: center;
+				}
+				.reviewer-photo{
+					float: none;
+				    margin-right: 0px;
+				    margin-top: 0px;
+				}
+				.reviewer-name::after {
+				    margin: 10px auto;
+				}
+			}
+			
+		}
+		
+	}
+	.reviews li::before, .reviews li::after {
+    	height: 305px;
+	}
+	.work-process {
+		li {
+			width: 100%;
+			p {
+				font-size: 16px;
+			}
+		}
+	}
+	.footer {
+		li {
+			font-size: 12px;
+			padding-right: 20px;
+			font-weight: 300;
+			line-height: 30px;
+		}
+	}
+	
+}

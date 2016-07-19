@@ -3,41 +3,52 @@
 const gulp = require('gulp');
 const less = require('gulp-less');
 const autoprefixer = require('gulp-autoprefixer');
-// const browserSync = require('browser-sync').create();
+const sourcemaps = require('gulp-sourcemaps'); 
+const browserSync = require('browser-sync').create();
 const del = require('del');
 
-const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development'; // default - development 
-// OR NODE_ENV=production gulp <taskname>
-
-
-// gulp.task('serve', function(){
-// 	browserSync.init({
-//      	server: "./"
-//  	});
-
-//  	browserSync.watch("./*.*").on('change', browserSync.reload);
-// });
-
- // browserSync.stream();
+const paths = {
+    less:['src/less/**/*.less'],
+    js:['src/js/**/*.js'],
+    html:['./*.html']
+};
 
 gulp.task('styles', function () {
-	return gulp.src('src/less/**/*.less')  // до * - base, после - relative
-		// .pipe(gulpIf(isDevelopment, sourcemaps.init()))
+	return gulp.src(paths.less) 
+		.pipe(sourcemaps.init())
 		.pipe(less())
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions']
 		}))
-		// .pipe(concat('all.css'))
-		// .pipe(gulpIf(isDevelopment, sourcemaps.write()))
-		.pipe(gulp.dest('public/css')); // public+ relative
+		.pipe(sourcemaps.write())
+		.pipe(gulp.dest('public/css'))
+		.pipe(browserSync.reload({stream: true})); 
 });
 
-// gulp.task('clean', function(){
-// 	return del('public/css');
-// });
-
-gulp.task('watcher', function(){
-	gulp.watch('src/less/**/*.less', gulp.series('styles'));
+gulp.task('scripts', function() {
+    return gulp.src(paths.js)
+    	.pipe(sourcemaps.init())
+    	.pipe(sourcemaps.write())
+        .pipe(gulp.dest('public/js'))
+        .pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('default', gulp.series('styles', 'watcher'));
+gulp.task('entryFiles', function() {
+    return gulp.src(paths.html)
+        .pipe(browserSync.reload({stream:true}));
+});
+
+gulp.task('watcher', function() {
+  	gulp.watch(paths.less, ['styles']);
+  	gulp.watch(paths.js, ['scripts']);
+  	gulp.watch(paths.html, ['entryFiles']);
+});
+
+gulp.task('serve', function() {
+
+    browserSync.init({
+         server: "./"
+     });
+});
+
+gulp.task('default', ['entryFiles', 'styles', 'scripts', 'serve', 'watcher']);
