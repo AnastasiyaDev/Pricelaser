@@ -29,9 +29,15 @@
     .navigation {
 		margin-top: 30px; 
 		padding: 0px 0px 0px 120px; 
-		width: auto; 
+		// width: auto; 
     	text-align: right;
-    	font-size: 14px; 
+    	.nav{
+    		a {
+    			font-size: 14px; 
+    			padding: 0px 14px;
+    		}
+    	}
+    	
     }
     .primary {
     	padding-bottom: 20px;
@@ -49,7 +55,7 @@
 			}
 	    	p {
 	    		margin-bottom: 0px;
-	    		font-size: 50%; 
+	    		font-size: 75%; 
 	    		line-height: 40px; 
 	    	}
     	}
@@ -66,7 +72,7 @@
     .reviews {
     	ul {
     		text-align: left;
-    		padding: 25px 0px;
+    		padding: 20px 0px;
     		li {
     			box-sizing: border-box;
 	    		height: 190px;
@@ -95,6 +101,9 @@
     .reviews li::before, .reviews li::after {
     	height: 190px;
 	}
+	.work-process-header {
+		font-size: 30px;
+	}
 	.work-process {
 		white-space: nowrap;
 		li {
@@ -108,10 +117,5 @@
 				line-height: 30px;
 			}
 		}
-	}
-	.content {
-	    h1 {
-	    	font-size: 30px;
-	    }
 	}
 }

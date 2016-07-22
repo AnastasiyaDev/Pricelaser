@@ -235,13 +235,12 @@ a {
 }
 .reviews {
 	background-color: @grey-review-b;
-	// margin-bottom: 50px; 
 	ul {
 		text-align: center;
 		margin: 0px;
     	padding: 25px 0px 25px 0px;
 		li {
-			    box-sizing: border-box;
+			box-sizing: border-box;
 			color: @grey-review-line;
 			display: inline-block;
 			height: 290px;
@@ -252,7 +251,7 @@ a {
 	    	vertical-align: top; 
 	    	letter-spacing:-1px;
 			font-family: @font-d-l;
-	    	.reviewer-name::after {
+	    	.reviewer-name:after {
 			    background: @grey-review-line - #444 none repeat scroll 0 0;
 			    content: "";
 			    display: block;
@@ -268,7 +267,7 @@ a {
 	}
 	
 }
-.reviews li::before, .reviews li::after {
+.reviews li:before, .reviews li:after {
     border: 1px solid @grey-review-line - #444;
     content: "";
     display: block;
@@ -278,11 +277,11 @@ a {
     top: 0;
     vertical-align: top; 
 }
-.reviews li::before {
+.reviews li:before {
     border-right: 0 none;
     left: 0;
 }
-.reviews li::after {
+.reviews li:after {
     border-left: medium none;
     right: 0;
 }
@@ -295,7 +294,6 @@ a {
     margin: 73px 32px 60px 0px;
     letter-spacing:-1px;
 }
-
 .work-process {
 	margin-top: 40px;
 	margin-bottom: 77px;
@@ -307,10 +305,10 @@ a {
 	    max-width: 25%;
 	    min-width: 24%;
 	    padding: 0px 30px;
-	    &:first-child::before {
+	    &:first-child:before {
     		display: none;
 		}
-		&::before {
+		&:before {
 		    background: url("../img/arrow-right.png") no-repeat 0 0;
 		    content: "";
 		    display: block;
@@ -326,11 +324,12 @@ a {
 			color: @black;
 			font-size: 23px;
 			line-height: 30px;
-			margin-top: 10px;
+			margin-top: 8px;
 			b {
 				font-family: @font-d;
-				font-weight: 700;
+				font-weight: 500;
 				color: @black + #111;
+				letter-spacing:-1px;
 			}
 		}
 	}
@@ -338,7 +337,7 @@ a {
 }
 .footer {
 	height: 90px;
-	ul::before {
+	ul:before {
 		background: @soc-grey none repeat scroll 0 0;
 		content: "";
 		display: block;
@@ -365,7 +364,7 @@ a {
 		background-size: 57% auto !important;
 		.tagline {
 			p {
-				font-size: 14px !important;
+				font-size: 15px !important;
 		    	line-height: 25px !important;
 		    	margin-top: 20px !important;
 			}

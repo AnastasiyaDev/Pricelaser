@@ -32,6 +32,7 @@
 
 		<a class="logo marg-auto" href=""></a>
 
+		<!-- mobile's lists(hidden)  -->
 		<ul id="log-list" class="unstyle list-for-mob">
 			<li><a href="">Patient Login</a></li>
 			<li><a href="">Patient Registration</a></li>
@@ -44,6 +45,7 @@
 			<li><a href="">FAQ</a></li>
 			<li><a href="">Why Pricelaser.com</a></li>
 		</ul>
+		<!-- end mobile's lists  -->
 
 		<div class="navigation max-w-1200 marg-auto">
 
@@ -62,8 +64,10 @@
 				<li><a href="">Contact Us</a></li>		
 			</ul>
 		</div>
+		<!-- .navigation -->
 
 	</div>
+	<!-- .header -->
 
 	<div class="content">
 		<div class="primary">
@@ -80,12 +84,46 @@
 				</a>
 			</div>
 		</div>
+		<!-- .primary -->
 
 		<div class="reviews">
 			<div class="max-w-1200 marg-auto clearfix">
-				<ul id="reviewers" class="clearfix"></ul>
+				<ul id="reviewers" class="clearfix">
+					<!--[if IE 8]>
+						<li>
+							<p class="reviewer-photo">
+								<img alt="avatar" src="public/img/reviewers/sara.png">
+							</p>
+							<p class="reviewer-name">SARA THOMAS</p>
+							<p class="reviewer-note">
+								<i>I wanted to make a surgery over 2 years, but I had only $3§k, when all surgeons asked $6, and by pricelaser I got the operation with best surgeon for $3k</i>
+							</p>
+						</li>
+						<li>
+							<p class="reviewer-photo">
+								<img alt="avatar" src="public/img/reviewers/raymond.png">
+							</p>
+							<p class="reviewer-name">RAYMOND MITCHELLE</p>
+							<p class="reviewer-note">
+								<i>Duis mollis, est non commodo luctus, nisi porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam porttitor ligula.</i>
+							</p>
+						</li>
+
+						<li>
+							<p class="reviewer-photo">
+								<img alt="avatar" src="public/img/reviewers/sandra.png">
+							</p>
+							<p class="reviewer-name">SANDRA MYRPHY</p>
+							<p class="reviewer-note">
+								<i>Nulla vitae elit libero, a pharetra augue. Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla.</i>
+							</p>
+						</li>
+
+    				<![endif]-->
+				</ul>
 			</div>
 		</div>
+		<!-- .reviews -->
 
 		<script type="text/template" id="list-template">
 
@@ -120,11 +158,15 @@
 				</li>
 				<li>
 					<img alt="step-4" src="public/img/4th-step-yellow.png">
-					<p>If matched, you are on your way to a great LASIK experience</p>
+					<p>If matched, you are on <!--[if IE 8]><br><![endif]-->
+					your way to a great <!--[if IE 8]><br><![endif]-->
+					LASIK experience</p>
 				</li>
 			</ul>
 		</div>
+		<!-- work-process-block -->
 	</div>
+	<!-- .content -->
 
 	<div class="footer">
 		<div class="max-w-1200 marg-auto">
@@ -135,12 +177,40 @@
 			</ul>
 		</div>
 	</div>
-
+	<!-- .footer -->
 
   	<script src="https://code.jquery.com/jquery-3.0.0.min.js"
           	integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script>
+	
   	<script src="./public/js/getData.js"></script>
 	<script src="./public/js/script.js"></script>
+
+	<!--[if lt IE 8]>
+        <script>
+            window.location = "http://www.pricelaser.com/download-new-browser"
+        </script>
+    <![endif]-->
+
+    <!--[if IE 8]>
+    	<script src="./public/js/selectivizr-min.js"></script>
+
+    	<style type="text/css">
+		.work-process {
+			text-align: center;
+			display:table;
+			width: 100%;
+			margin-bottom: 77px;
+		}
+		.work-process li {
+			  display: table-cell;
+			}
+		.facebook, .twitter, .google-plus, .btn, .authorization a:hover {
+			behavior: url(./public/pie_files/PIE.htc);
+		}
+		</style>
+
+    <![endif]-->
+
 </body>
 </html>
