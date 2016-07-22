@@ -52,6 +52,8 @@ html, body {
 	font-size: 16px;
 	font-weight: 300;
 	color: @black;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 a {
   	outline: none;
@@ -185,18 +187,20 @@ a {
     padding: 0px 0px 90px;
 }
 .primary {
-	background: @grey-primary-b url("../img/girl-eyes-wallpaper.png") no-repeat right center;
+	background: @grey-primary-b url("../img/girl-eyes-wallpaper.png") no-repeat right center; //542px
 	height: 571px;
 	position: relative;
+	margin-right: -120px;
 	.frame {
 		background: url("../img/frame.png") no-repeat 0 0;
 		position: absolute;
 		width: 294px;
 		height: 248px;
 		right: 130px;
-    	top: 226px;
+    	top: 220px;
 	}
 	.tagline {
+		margin-left: -60px;
 		color: @grey-primary-t;
 		font-size: 41px;
 		line-height: 70px;
@@ -224,6 +228,7 @@ a {
 		border-radius: 5px;
 		padding: 12px 40px;
 		box-sizing: border-box;  //&&&&&&&&&&&&&&&&&&&&&&&
+		margin-left: -58px;
 		.icon-arrow {
 			background: url("../img/arrow-in.png") no-repeat 0 0;
 			padding: 23px;
@@ -342,7 +347,7 @@ a {
 		content: "";
 		display: block;
 		height: 1px;
-		margin-bottom: 30px;	
+		margin-bottom: 35px;	
 	}
 	li {
 		a {
@@ -359,6 +364,20 @@ a {
 }
 
 @media screen and (min-width: 481px) and (max-width: 660px) {
+	.primary {
+		height: 180px !important;
+		background-size: 57% auto !important;
+		.tagline {
+			p {
+				font-size: 15px !important;
+		    	line-height: 25px !important;
+		    	margin-top: 20px !important;
+			}
+		}
+	}
+}
+@media screen and (min-width: 1200px) and (max-width: 660px) {
+
 	.primary {
 		height: 180px !important;
 		background-size: 57% auto !important;
