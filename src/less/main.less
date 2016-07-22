@@ -85,11 +85,11 @@ a {
 }
 .logo {
 	display: block;
-	margin: -90px 0 0;
+	margin: -92px 0px 0px;
 	background: url("../img/vector-smart-object-copy-15.png") no-repeat 0px 0px;
 	width: 182px;
 	height: 185px;
-	padding: 15px 15px 5px 15px;	
+	padding: 15px 15px 3px 15px;	
 }
 .list-for-mob {
 	text-align: center;
@@ -129,7 +129,7 @@ a {
 }
 .socio {
 	float: right;
-	margin: -94px 36px 0px;
+	margin: -91px 36px 0px;
 	.facebook, .twitter, .google-plus {
 		display: block;
 		width: 40px;
@@ -161,17 +161,17 @@ a {
 }
 .navigation {
 	text-align: center;
-	padding-left: 15px;
+	// padding-left: 15px;
 	.nav {
-		margin-bottom: 15px;
-    	margin-top: 0px; 
-    	margin-right: 35px;
+		padding-right: 30px;
+		margin: 0px 0px 25px 0px;
 		a {
 			font-weight: 400;
-			font-size: 18px;
+			font-size: 16px;
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 			// font-family: @font-d-l;           // &&&&&&&&&&&&&&&&&&&&&&&&&&&
 			padding: 0px 16px 0px 16px;
-			letter-spacing: -1px;
+			// letter-spacing: -1px;
 			&:hover {
 			color: @green;
 			}
@@ -183,14 +183,6 @@ a {
     margin: 0px auto -90px;
     min-height: 100%;
     padding: 0px 0px 90px;
-    h1 {
-    	text-align: center;
-    	font-weight: 100;
-    	color: @grey-primary-t;
-    	font-size: 44px;
-    	font-family: @font-d-l;
-    	margin: 50px 0px 60px 0px 
-    }
 }
 .primary {
 	background: @grey-primary-b url("../img/girl-eyes-wallpaper.png") no-repeat right center;
@@ -209,7 +201,7 @@ a {
 		font-size: 41px;
 		line-height: 70px;
 		padding-bottom: 26px;
-	    padding-top: 104px;
+	    padding-top: 101px;
 	    position: relative;
 	    .green-line {
 	    	height: 3px;
@@ -218,8 +210,8 @@ a {
 	    }
 	    p {
 			font-family: "Dinroundpro";
-	    	margin-top: 28px;
-	    	margin-bottom: 40px;
+	    	margin-top: 27px;
+	    	margin-bottom: 43px;
 	    }
 	}
 	.btn { 
@@ -227,12 +219,11 @@ a {
 		color: @white;
 		display: inline-block;
 		background: url("../img/btn-green.png") no-repeat 0 0;
+		font-family: @font-d-l;  
 		font-size: 28px;
 		border-radius: 5px;
-		padding: 12px 30px;
-		box-sizing: border-box;
-		font-weight: 100;
-		letter-spacing:-1px;
+		padding: 12px 40px;
+		box-sizing: border-box;  //&&&&&&&&&&&&&&&&&&&&&&&
 		.icon-arrow {
 			background: url("../img/arrow-in.png") no-repeat 0 0;
 			padding: 23px;
@@ -248,15 +239,15 @@ a {
 	ul {
 		text-align: center;
 		margin: 0px;
-    	padding: 25px 0px 0px 0px;
+    	padding: 25px 0px 25px 0px;
 		li {
+			    box-sizing: border-box;
 			color: @grey-review-line;
 			display: inline-block;
-			height: 335px;
-			// width: 287px;
-			width: 23%;
+			height: 290px;
+			width: 28%;
 			margin: 0px 20px;
-	    	padding: 15px 20px 0px;
+	    	padding: 0px 27px 0px;
 	    	position: relative;
 	    	vertical-align: top; 
 	    	letter-spacing:-1px;
@@ -282,7 +273,7 @@ a {
     content: "";
     display: block;
     width: 20px;
-    height: 294px;
+    height: 285px;
     position: absolute;
     top: 0;
     vertical-align: top; 
@@ -295,9 +286,19 @@ a {
     border-left: medium none;
     right: 0;
 }
+.work-process-header {
+    text-align: center;
+    font-weight: 100;
+    color: @grey-primary-t;
+    font-size: 46px;
+    font-family: @font-d-l;
+    margin: 73px 32px 60px 0px;
+    letter-spacing:-1px;
+}
+
 .work-process {
 	margin-top: 40px;
-	margin-bottom: 82px;
+	margin-bottom: 77px;
 	li {
 		box-sizing: border-box;
 		vertical-align: top;
@@ -342,13 +343,14 @@ a {
 		content: "";
 		display: block;
 		height: 1px;
-		margin-bottom: 40px;	
+		margin-bottom: 30px;	
 	}
 	li {
 		a {
+			font-family: @font-d-l;
 			color: @soc-grey - #555;
 		}
-		padding-right: 40px;
+		padding-right: 30px;
 		font-weight: 300;
 		line-height: 30px;
 		}
